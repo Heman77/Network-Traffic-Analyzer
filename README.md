@@ -4,14 +4,14 @@
 
 The objective of this project was to analyze the captured packets and find out which users are downloading software from blacklisted/illegal websites. Source and destination IP addresses are analyzed, and the location of the user is found out. We monitor the user’s packet traversal and find out which users are downloading software/data from these blacklisted sites. We also created a database where we store the geographical locations and all the other details about the packet for future use.
 
-![NetworkTrafficAnalyzer]
+![NetworkTrafficAnalyzer] https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.site24x7.com%2Fnetwork-traffic-monitoring.html&psig=AOvVaw0gl23X8Loigzs4KvbSbYbN&ust=1723315950822000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjgl6_K6IcDFQAAAAAdAAAAABAK
 
 This figure describes the overall working of the application.
 The admin continuously monitors different activities performed by the users in the network. If any user is performing any illegal activity such as performing downloads on illegal or blacklisted sites, then it detects at the admin side. Then, by using PyGeoIP, the admin correlates the IP address to the physical location of the destination of the packet. This is done by querying the database with a particular IP address. The database returns the record containing the city, region name, postal code, country name, latitude and longitude which is plotted on Google Earth.
 The database contains the URL, destination IP, timestamp, latitude, longitude etc. It is stored in an encrypted format to add on to the security of the system. Also, database can be used for future analysis and creating statistics of the illegal activities performed which can help enhancing the security.
 
 2.) Technologies and tools:
-- Analyzer developed using Python 2.7
+- Analyzer developed using Python 3.11
 - MySQL – stores all the info in encrypted format.
 - GeoLite City database – provides visual location of destination using Google Earth. 
 - PyGeoLite – correlates IP address to physical location which retrieves the latitude, longitude and region of the user.
