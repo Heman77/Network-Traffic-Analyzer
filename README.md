@@ -6,7 +6,7 @@ The objective of this project was to analyze the captured packets and find out w
 
 The diagram below exhibits a general view of the network traffic analyzer(Image source - Google)
 
-![NetworkTrafficAnalyzer](https://user-images.githubusercontent.com/22990797/124121209-7700fd80-da29-11eb-973a-2bc29969715b.PNG)
+![NetworkTrafficAnalyzer]
 
 This figure describes the overall working of the application.
 The admin continuously monitors different activities performed by the users in the network. If any user is performing any illegal activity such as performing downloads on illegal or blacklisted sites, then it detects at the admin side. Then, by using PyGeoIP, the admin correlates the IP address to the physical location of the destination of the packet. This is done by querying the database with a particular IP address. The database returns the record containing the city, region name, postal code, country name, latitude and longitude which is plotted on Google Earth.
