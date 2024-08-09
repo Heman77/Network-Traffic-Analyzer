@@ -4,8 +4,6 @@
 
 The objective of this project was to analyze the captured packets and find out which users are downloading software from blacklisted/illegal websites. Source and destination IP addresses are analyzed, and the location of the user is found out. We monitor the user’s packet traversal and find out which users are downloading software/data from these blacklisted sites. We also created a database where we store the geographical locations and all the other details about the packet for future use.
 
-The diagram below exhibits a general view of the network traffic analyzer(Image source - Google)
-
 ![NetworkTrafficAnalyzer]
 
 This figure describes the overall working of the application.
